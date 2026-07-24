@@ -8,37 +8,52 @@ using UnityEngine;
 
 public class EnemyMechanics : MonoBehaviour
 {
-    public static void Main(string[] args)
-    {
-        public float t = 0.0f;
-        
-        
-        
-        void Start()
-        {
-            Print("Kelly 02"); //    
+    public GameObject enemy;
+    public GameObject player;
+
+    [SerializeField] Transform playerT;
+    [SerializeField] Vector3 offset;
     
+    void Start()
+    {
+        Print("Kelly 02"); //    
+    
+    }
+        
+    void Update()
+    {
+        if(Input.GetKeyDown("KeyCode").W)
+        {
+            transform.position = player.position + offset;
+        }  
+                
+        if(Input.GetKeyDown("KeyCode").S + T)
+        {
+            print("Try programiz.pro");
         }
         
-        void Update()
+        else if()
         {
             
-            Console.WriteLine ("Try programiz.pro");
-            print();
-            print();
-        
-            if(Input.GetKeyDown("KeyCode").S + T)
-            {
-                print("Try programiz.pro");
-            }
-        
-            if()
-            {
             
-            
-            }
-        
         }
+        
+    }
+
+    void FollowTarget(Transform playerT, Vector3 offset)
+    {
+        //  public Camera camPlayer;
+        this.playerT = playerT;
+        this.offset = offset;
+        
+        if()
+        {
+            positio
+        }
+
+
+    }
+        
 }
 
 
